@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white:
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(116, 115, 115);
+}
+
+.home {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.text-box {
+    width: 90%;
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 60%;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.hero-button:hover {
+    color: black;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+/*AboutUs*/
+.about_us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*Products*/
+
+.products {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    cursor: default;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    cursor: default;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.product-col {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: default;
+}
+h2 {
+    cursor: default;
+}
+
+.product-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*Products Promos*/
+.promos {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.product-promos {
+    flex-basis: 31%;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.product-promos:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.contact_us {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
