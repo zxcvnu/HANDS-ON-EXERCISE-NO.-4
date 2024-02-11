@@ -1,0 +1,37 @@
+contact_us a:hover { background-color: #444; }
+
+/* Custom variables */ :root { --primary-color: #333; --secondary-color: #ddd; --background-color: #f2f2f2; --text-color: #333; }
+
+/* Media queries and responsive styles */ @media only screen and (max-width: 768px) { .row { flex-wrap: wrap; }
+
+.product-col, .product-promos { flex: 100%; margin: 10px 0; } }
+
+@media only screen and (max-width: 480px) { .navbar a { padding: 10px 8px; }
+
+.home h1, .about h1, .products h1, .promos h1, .contact_us h1 { font-size: 24px; } }
+
+/* Pseudo-classes, pseudo-elements, and pseudo-selectors */ a { color: var(--text-color); text-decoration: none; }
+
+a:hover { color: var(--primary-color); }
+
+h1, h2, h3 { margin: 0; }
+
+h1:first-child, h2:first-child, h3:first-child { font-weight: normal; }
+
+p { margin: 10px 0; }
+
+input[type="text"], input[type="email"], textarea { display: block; width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+
+input[type="submit"] { background-color: var(--primary-color); color: #fff; padding: 10px 20px; border: none; border-radius: 5px; }
+
+input[type="submit"]:hover { background-color: var(--secondary-color); }
+
+/* CSS functions */ .box_1 { background-color: rgba(0, 0, 0, 0.1); }
+
+.box { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.product-col:nth-child(even) { background-color: var(--secondary-color); }
+
+.product-promos:nth-child(2) { background-color: var(--primary-color); color: #fff; }
+
+.product-promos:nth-child(2) h2 { color: #fff; }

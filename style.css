@@ -1,17 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-* {
+body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-
-html {
-    scroll-behavior: smooth;
 }
 
 nav, .nav-links {
@@ -19,6 +9,7 @@ nav, .nav-links {
 }
 
 nav {
+    background-color: white;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
@@ -33,7 +24,7 @@ nav {
 a {
     color: black;
     text-decoration: none;
-    text-decoration-color: white:
+    text-decoration-color: white;
 }
 
 a:hover {
@@ -44,126 +35,164 @@ a:hover {
 }
 
 .home {
+    padding: 20px;
     text-align: center;
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
+    background-color: white;
 }
 
-.text-box {
-    width: 90%;
+.home h1 {
+    font-size: 36px;
     color: black;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
-.text-box h1{
-    font-size: 60%;
-}
-
-.text-box p {
-    margin: 10px 0 40px;
-}
-
-.hero-button {
-    display: inline-block;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.hero-button:hover {
+.home p {
+    font-size: 18px;
     color: black;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
 }
 
-/*AboutUs*/
 .about_us {
-    width: 80%;
-    margin: auto;
+    padding: 20px;
     text-align: center;
-    padding-top: 50px;
+    background-color: white;
 }
 
-/*Products*/
+.about_us h1 {
+    font-size: 36px;
+}
 
 .products {
-    width: 80%;
-    margin: auto;
+    padding: 20px;
     text-align: center;
-    padding-top: 100px;
+    background-color: white;
 }
 
-h1 {
-    font-size: 30px;
-    font-weight: 600;
-    cursor: default;
-}
-
-p{
-    color: black;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    cursor: default;
+.products h1 {
+    font-size: 36px;
 }
 
 .row {
-    margin-top: 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
 .product-col {
-    flex-basis: 31%;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
-}
-h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    cursor: default;
-}
-h2 {
-    cursor: default;
+    flex: 1;
+    padding: 10px;
 }
 
-.product-col:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
-/*Products Promos*/
 .promos {
-    width: 80%;
-    margin: auto;
+    padding: 20px;
     text-align: center;
-    padding-top: 100px;
+    background-color: white;
 }
 
-.product-promos {
-    flex-basis: 31%;
-    background: white;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
+.promos h1 {
+    font-size: 36px;
 }
 
-.product-promos:hover {
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
 .contact_us {
-    width: 80%;
-    margin: auto;
+    padding: 20px;
     text-align: center;
-    padding-top: 100px;
+    background-color: white;
+}
+.contact_us h1 {
+    font-size: 36px;
+}
+
+,.contact_us a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: beige;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact_us a:hover {
+    background-color: grey;
+}
+
+:root {
+    --primary-color: #333
+    --secondary-color: #ddd
+    --background-color: #white
+}
+
+@media only screen and (max-width: 768px)
+
+{.row { flex-wrap: wrap;}}
+
+.product-col, .product-promos {
+    flex: 100%;
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 480px)
+
+{ .nav-links a { padding: 10px 8px}}
+
+.home h1, .about h1, .product h1, .promos h1, .contact_us h1 {
+    font-size: 24px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+h1:first-child, h2:first-child, h3:first-child {
+    font-weight: normal;
+}
+
+p {
+    margin: 10px 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+.box_1 {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-col:nth-child(even) {
+    background-color: var(--secondary-color);
+}
+
+.product-promos:nth-child(2) {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+.product-promos:nth-child(2)
+h2 {
+    color: #fff;
 }
